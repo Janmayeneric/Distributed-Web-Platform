@@ -1,0 +1,9 @@
+.following-entry:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.followers-entry:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}

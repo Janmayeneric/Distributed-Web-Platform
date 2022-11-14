@@ -1,0 +1,51 @@
+<!-- Post Modal -->
+<!-- https://www.w3schools.com/bootstrap/bootstrap_modal.asp-->
+<div id="post_modal_id" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="container-fluid">
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Create a post</h4>
+                <button id="modal_close_btn_id" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row form-group">
+                    <label for="username_id">Username</label>
+                    <input type="text" id="username_id" class="form-control" value="User 1" disabled>
+                </div>
+                <div class="row form-group">
+                    <label for="community_id">Community</label>
+                    <select class="form-control" id="community_id">
+                        <option value="" selected disabled>Select a community</option> <!-- Default option-->
+                        <!--	Options added from communities list	-->
+                    </select>
+                </div>
+                <div class="row form-group">
+                    <label for="postTitle_id">Post Title</label>
+                    <textarea class="form-control" id="postTitle_id" rows="1" placeholder="Enter title here"></textarea>
+                </div>
+                <div class="row form-group">
+                    <label for="postContent_id">Post Content</label>
+                    <textarea class="form-control" id="postContent_id" rows="4" placeholder="Enter message here"></textarea>
+                </div>
+                <div class="row form-group">
+                    <div class="col-md-8 d-flex justify-content-center">
+                        <label for="postImage_id" class="h5 mr-2 text-break">Select Image (16 MB limit)</label>
+                        <input id="upload_id" type="file" class="m-2 text-break" onchange="displayImage(this)">
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <image id="uploaded_img_id" src="#" style="display: none; width:100%;"></image>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#" id="clear_id" class="mr-auto text-break" onclick="clearUploadedFile()" style="display: none;">Clear Image</a>
+            <button class="btn btn-success btn-lg btn3d send-btn" id="send_post_btn_id"><span class="glyphicon glyphicon-ok"></span>Send</button>
+        </div>
+        </div>
+    </div>
+</div>

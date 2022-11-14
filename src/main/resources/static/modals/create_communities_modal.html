@@ -1,0 +1,33 @@
+<!-- Create Community Modal -->
+<div id="create_community_modal_id" class="modal" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="container-fluid">
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Create a Community</h4>
+                <button id="modal_close_btn_id" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row form-group">
+                    <label for="createCommunity_name_id">Name</label>
+                    <textarea class="form-control" id="createCommunity_name_id" rows="1" placeholder="Enter name here ([a-z][A-Z][0-9], no spaces!)"></textarea>
+                </div>
+                <div class="row form-group">
+                    <label for="createCommunity_topic_id">Topic</label>
+                    <textarea class="form-control" id="createCommunity_topic_id" rows="1" placeholder="Enter topic here"></textarea>
+                </div>
+                <div class="row form-group">
+                    <label for="createCommunity_genre_id">Genre</label>
+                    <textarea class="form-control" id="createCommunity_genre_id" rows="1" placeholder="Enter genre here"></textarea>
+                </div>
+            </div>
+            </div>
+        <div class="modal-footer">
+            <button class="btn btn-success btn-lg btn3d" id="create_community_send_btn" onclick="handleCommunityCreate()"><span class="glyphicon glyphicon-ok"></span>Create</button>
+        </div>
+        </div>
+    </div>
+</div>

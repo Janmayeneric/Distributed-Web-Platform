@@ -1,0 +1,57 @@
+.fa-comments:hover, 
+.fa-share:hover, 
+.fa-save:hover,
+.fa-plus:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+/* Moving towards centre of comment box */
+.content-container, .content-options{
+    padding-right: 10%;
+    padding-left: 5%;
+}
+
+.content-container{
+    padding-bottom: 1%;
+}
+
+.post_options{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.post_options:hover{
+    cursor: pointer;
+}
+
+.content-heading{
+    padding-right: 0 !important;
+    padding-bottom: 2%;
+}
+
+#vote_value_id{
+    font-weight: bold;
+}
+
+.post_subcommittee{
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+.post_username{
+    font-size: 14px;
+    color: gray;
+}
+
+.highlighted-posts{
+    background-color: orange !important;   
+}
+
+.stored-image{
+    width: 100%;
+}
+
+.post-entity{
+}

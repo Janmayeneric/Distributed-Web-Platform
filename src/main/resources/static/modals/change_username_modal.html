@@ -1,0 +1,29 @@
+<!-- User Details Modal -->
+<div id="change_username_modal_id" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="container-fluid">
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Change Username</h4>
+                <button id="modal_close_btn_id" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row form-group">
+                    <label for="user_details_username_id">Username:	</label>
+                    <input type="text" id="user_details_username_id" class="form-control" disabled>
+                </div>
+                <div class="row form-group">
+                    <label for="new_username_id">New Username: </label>
+                    <input type="text" id="new_username_id" class="form-control">
+                </div>
+                <div class="row form-group">
+                    <button class="btn btn-success btn-md btn3d" onclick="handleUsernameChange()">Change Username</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>

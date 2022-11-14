@@ -1,0 +1,96 @@
+/* Here is our CSS for the homepage */
+
+.sign-in{
+    margin-bottom: 5% !important;
+}
+
+.header{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#header_id{
+    background-color: lightgray;
+}
+
+#navigation_id{
+    background-color: rgb(242, 245, 247);
+}
+
+.content_row{
+    margin-top: 20px;
+    border: 1px solid darkgray;
+}
+
+.content_row:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/* https://bootsnipp.com/snippets/g6y1 */
+.post-btn, .create-community-btn, .delete-community-btn, .send-btn{
+    box-shadow:0 0 0 1px #5cb85c inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #4cae4c, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
+    background-color:#5cb85c;
+}
+
+.known-user-id{
+    text-align: center;
+}
+
+.profile-image{
+    margin-top: 0;
+    height: 50px;
+    width: 50px;
+}
+
+.copyright{
+    margin-top: 200%;
+}
+
+.no-posts-message{
+    margin-top: 40%;
+}
+
+.profile-dropdown-btn{
+    background-color: transparent;
+    border: transparent;
+    padding: 0;
+}
+
+.refresh-button-container {
+    border: 1px solid darkgray;
+    display: none;
+}
+
+.refresh-button-container:hover {
+    border: 1px solid black;
+}
+
+.refresh-button{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#content_column_id{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#post_button_id, #comm_create_btn_id, #comm_delete_button, #random_act_of_kindness_btn_id{
+    display: none;
+}
+
+#unknown_user_img_id{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.overlay-style{
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+}
+
+.alert{
+    display: none;
+}

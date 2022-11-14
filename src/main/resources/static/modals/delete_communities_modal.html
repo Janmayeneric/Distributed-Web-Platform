@@ -1,0 +1,34 @@
+<!-- Delete Community Modal -->
+<div id="delete_community_modal_id" class="modal" role="dialog">
+<div class="modal-dialog modal-xl" role="document">
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="container-fluid">
+        <div class="modal-header text-center">
+            <h4 class="modal-title w-100 font-weight-bold">Delete a Community</h4>
+            <button id="modal_close_btn_id" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="row form-group">
+                <label for="deleteModal_community_id">Community:</label>
+                <select class="form-control" id="deleteModal_community_id">
+                    <option value="" selected disabled>Select a community</option> <!-- Default option-->
+                    
+                    <!-- Loaded from communities list----->
+                    
+                </select>
+            </div>
+            <div class="row form-group">
+                <label for="deleteMessage_id">Message</label>
+                <textarea class="form-control" id="deleteMessage_id" rows="2" placeholder="Enter message here"></textarea>
+            </div>
+        </div>
+        </div>
+    <div class="modal-footer">
+        <button class="btn btn-success btn-lg btn3d" id="delete_community_send_btn" onclick="handleCommunityDelete()"><span class="glyphicon glyphicon-ok"></span>Delete</button>
+    </div>
+    </div>
+</div>
+</div>

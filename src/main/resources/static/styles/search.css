@@ -1,0 +1,7 @@
+.search-community-name, .search-username{
+    border-right: 1px solid black;
+}
+
+.search-error{
+    opacity: 0;
+}

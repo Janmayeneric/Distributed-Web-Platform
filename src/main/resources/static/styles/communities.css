@@ -1,0 +1,9 @@
+#community_list_item_id{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.community-lists:hover{
+    background-color: darkgray;
+    cursor:pointer;
+}

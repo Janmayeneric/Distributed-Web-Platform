@@ -1,0 +1,46 @@
+<!-- Comments Modal -->
+<div id="content_modal_id" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="container-fluid">
+            <div class="modal-header">
+                <div>
+                    <h4 class="modal-title w-100 font-weight-bold text-break" id="content_modal_title_id">Title</h4>
+                    <div>
+                        <span class="post_subcommittee text-break" id="post_maker_subcommittee_id"></span>
+                    </div>
+                    <span class="post_username text-break" id="post_maker_id"></span>
+                </div>
+                <button id="modal_close_btn_id" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="modal_body_id">
+                <div class="row form-group">
+                    <div class="col-md-6">
+                        <p id="modal_content_id" class="text-break"></p>
+                    </div>
+                    <div class="col-md-6" id="image_container_id">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label id="modal_comment_label_id" class="text-break" for="modal_comment_id"></label>
+                    <textarea class="form-control" id="modal_comment_id" rows="4" placeholder="What are your thoughts?"></textarea>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-secondary form-control text-break" id="modal_comment_btn_id" onclick="createCommentOnModal();">COMMENT</button>
+                </div>
+                <div class="container" id="comments_section_id">
+                    <div class="row comments_header"> <!--Should automatically generate using backend JQuery-->
+                        <h5 class="modal-title w-100 font-weight-bold text-break mb-2">Comments Section</h5>
+                    </div>
+                    <div class="row no-comments-message justify-content-center" id="no_comments_message_id">
+                        <h4>No comments</h4>
+                    </div>
+                    <div id="comments_component_container_id"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

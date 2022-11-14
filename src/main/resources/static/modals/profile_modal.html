@@ -1,0 +1,42 @@
+<!-- Profile Modal -->
+<div id="profile_modal_id" class="modal" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="container-fluid">
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Profile</h4>
+                <button id="modal_close_btn_id" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row form-group">
+                    <label for="profile_username_id">Username:	</label>
+                    <input type="text" id="profile_username_id" class="form-control text-break" disabled>
+                </div>
+                <div class="row" id="following_list_header_id">
+                    <h5 class="u"><u>Following</u></h5>
+                </div>
+                <div class="row following-list-container">
+                    <ul class="list-group d-flex justify-content-center pu-2" id="following_list_id">
+                        <!-- Will be dynamically inserted -->
+                        <p id="no_following_message_id"> You aren't following anyone</p>
+                    </ul>
+                </div>
+                <div class="row mt-4" id="followers_list_header_id">
+                    <h5 class="u"><u>Followers</u></h5>
+                </div>
+                <div class="row followers-list-container">
+                    <ul class="list-group d-flex justify-content-center pu-2" id="followers_list_id">
+                        <!-- Will be dynamically inserted -->
+                        <p id="no_followers_message_id"> You have no followers</p>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+            </div>
+            </div>
+        </div>
+    </div>
+</div>

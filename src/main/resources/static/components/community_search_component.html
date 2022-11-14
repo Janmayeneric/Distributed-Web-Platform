@@ -1,0 +1,9 @@
+<div class="row shadow-lg p-2 mb-5 bg-white rounded content_row" id="search_default_row_id" style="display: none;"> <!-- Returned search object -->
+    <div class="col-md-6 d-flex justify-content-center"> <!-- Content -->
+        <h3 id="community_name_id" class="text-break">Name of Community</h3>
+    </div>
+    <div class="col-md-6 d-flex justify-content-center">
+        <button id="search_join_btn_id" type="button" class="btn btn-primary" style="display: none;" onclick="joinCommunity($(this).parent().parent(), 'search_result')"><i class="fas fa-plus">JOIN</i></button>
+        <button id="search_leave_btn_id" type="button" class="btn btn-primary" style="display: none;" onclick="leaveCommunity($(this).parent().parent(), 'search_result')"><i class="fas fa-minus">LEAVE</i></button>
+    </div>
+</div>

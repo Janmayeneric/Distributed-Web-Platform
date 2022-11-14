@@ -1,0 +1,53 @@
+<div class="row shadow-lg p-2 mb-5 bg-white rounded content_row post-entity" id="content_default_row_id" style="display: none;"> <!-- Post object -->
+    <div class="col-md-1" id="voting_id">
+        <!--Upvotes and Downvotes-->
+        <div class="d-flex justify-content-center pt-1">
+            <btn class="btn btn-outline-success" id="upvote_id" data-clicked=false ondblclick="stopPropagation(event)" onclick="upvote(this)"><i class="fas fa-caret-up"></i></btn>
+        </div>
+        <div class="d-flex justify-content-center" id="vote_value_container_id">
+            <span id="vote_value_id" class="text-break">1</span>
+        </div>
+        <div class="d-flex justify-content-center">
+            <btn class="btn btn-outline-danger" id="downvote_id" data-clicked=false ondblclick="stopPropagation(event)" onclick="downvote(this)"><i class="fas fa-caret-down"></i></btn>
+        </div>
+    </div>
+    <div class="col-md-11"><!-- Content -->
+        <div class="row content-heading">
+            <!-- Title and name -->
+            <div class="col-md-7">
+                <div class="header_details">
+                    <span class="post_community text-break" id="post_community_id">subcomittee</span>
+                </div>
+                <div class="header_details">
+                    <span class="post_username text-break" id="post_username_id">user</span>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="dropdown">
+                    <i class="fas fa-ellipsis-v float-right" id="post_hide_options_id" data-toggle="dropdown" 
+                    aria-haspopup="true" aria-expanded="false" ondblclick="stopPropagation(event)"></i>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="post_hide_options_id">
+                        <a class="dropdown-item" id="hide_option_id">Hide</a>
+                        <a class="dropdown-item" id="delete_option_id">Delete</a>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center content-container">
+            <!-- Title -->
+            <h4 id="post_title_id" class="text-break">Default Title</h4>
+            <!-- Has data attributes attached to it -->
+            <span id="post_content_id"></span>
+        </div>
+        <div class="row d-flex justify-content-center content-container">
+            <!-- Image if it exists -->
+            <image id="loaded_img_id" src="#" style="display: none; width:100%;"></image>
+        </div>
+        <div class="row d-flex justify-content-center content-options">
+            <!-- Comments -->
+            <div class="post_options">
+                <i class="fas fa-comments text-break" data-clicked="false" ondblclick="stopPropagation(event)">Comment</i>
+            </div>
+        </div>
+    </div>
+</div>

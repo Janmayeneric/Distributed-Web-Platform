@@ -1,0 +1,34 @@
+.comment_title{
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+#modal_comment_label_id{
+    margin-top: 10%;
+    font-weight: bold;
+}
+
+.my-arrow-colour{
+    color: grey;
+}
+
+.fa-long-arrow-alt-up:hover{
+    color: green;
+}
+
+.fa-long-arrow-alt-down:hover{
+    color: red;
+}
+
+.content-comments{
+    margin-top: 2.5%;
+}
+
+.line-boundary{
+    border-left: 1px black solid;
+}
+
+.no-comments-message{
+    margin-top: 5%;
+}
